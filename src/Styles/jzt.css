@@ -1,0 +1,81 @@
+.jaz{
+  background: linear-gradient(to right, #e1eeff, #FBFCFF);}
+.person-details {
+    background-color: #87CEFA;
+    color: black;
+    font-family: "Serif", serif;
+  }
+  .fields{
+  
+  }
+  h1 {
+    background-color: white;
+    font-family: "Sans-Serif", sans-serif;
+  }
+  
+  table {
+    width: 60%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    
+    padding: 10px;
+     text-align: left;
+    
+    
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #b0d2ff;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-family: "Sans-Serif", sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Show the red star only for input fields */
+  
+  
+  th span::after {
+    content: '*'; /* Adding a red star as content */
+    color: red; /* Setting the color to red */
+    margin-left: 2px; /* Adding some space between the text and the star */
+  }
+  
+  /* Media query for screens smaller than 600px */
+  @media (max-width: 600px) {
+    table {
+      width: 100%; /* Make the table occupy full width */
+    }
+  
+    th,
+    td {
+      display: block; /* Change table cells to block elements */
+      width: 100%;
+      text-align: left;
+    }
+  
+    th span::after {
+      display: none; /* Hide the red star on smaller screens */
+    }
+  }
+  
+  /* Media query for screens smaller than 400px */
+  @media (max-width: 400px) {
+    input {
+      font-size: 12px; /* Adjust input font size for smaller screens */
+    }
+  }
